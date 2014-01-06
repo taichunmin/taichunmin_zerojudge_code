@@ -1,0 +1,1 @@
+d198 < d198in.txt > d198out.txt

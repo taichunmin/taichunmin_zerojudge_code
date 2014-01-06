@@ -1,0 +1,71 @@
+zerojudge萬歲
+1a6f 6 65afd 15s 1sa 12 115
+123
+aaa123 123
+a21s 123s 231
+1ad211 51 616 1 21 51 51 25 14 879 d
+afdaf afww xvas asdf zvaawwwfer vsvdsv
+3a1f65 4 16sa4f6 a1a6 6 w6 6w1f6 w
+1sa6f1 6w 61w61f6w1 6w 6w1 w 
+116 16 4 1 64a 1a3 4 54614w
+hhhy46 t 16rt
+ag14 6e4  6
+a1f 65w        164f6 a
+6a1 61 6 a6 16a    6dsaf1 
+dfajkh lw h wouih iwh 
+2a213  16w ssa sakj iw
+dsfa w wwiheihwi fwoiejeiowq
+ oaihf oao woh ow ooa ow
+ah iwh iw ihwifn nci isch isiidi
+彰
+156 #i  nc  lu  de  <io  str   eam>
+#i 1  nclu  de<s  str   eam>
+us  654  ing n  a  mesp  ace s   td;
+i  nt m16a  in( ) 
+{  1564
+     st61698 r   ing s a;
+   i   tr  n49  gs tre  am i   ssa ,is   sb;
+  w h ile (get123line(cin,sa))
+  {  156
+     i  461ssa.c lea r();
+ 1    i   s 6461 sa.s tr(s a);
+  91   int  i a,i6841   = 0,la;
+  213   b    oo  l b a6;
+     wh i    le(is s1 a>>sa)
+    61{ 136
+       ba16=true;
+      la=  16sa .length();
+      for  (i16nt i=0;i<la;i++)
+        i f(   1654 s a[i ]<' 0' | | sa [i]>'9 ')
+   61     {  61
+    61      b a61 =  fals e;
+     61      br  612e ak;
+    5      }1
+    4   if(b 35a)
+     98  { 12
+      31    i1ss b .cle ar ();
+ 65       i s 3sb. str(sa);
+   416      is s12b> >ia;
+     76   ib+=ia 12;
+      }  13
+ 946   }12
+  64   co33u t<< i  b< <endl;
+  }4 264
+   sys 5tem ( "pa us  e");
+}16
+1616 16 46 451 68 913 54 648 1
+小明 156 4615 461 6546 1
+為了1 64 694 64 69 
+要 16 1 614 65      
+保證資料傳輸的隱密性 16 16 1 6 
+，為檔案設置了一個加密金鑰 243 694 165 459 
+，並且將金鑰藏進了一個檔案裡 16 4 98 19 879 14 
+。收到檔案的小風得知要解譯出 1 654 69 49 41 9
+他所使用的加密金鑰，必須將 1 65 49 4 981 9
+檔案裡所有不含非數字 1 54 5691 36 7 9
+的單字找出，加起來 1 5454w545494 1 9 19 9 
+就是加密金鑰。可是， 11 654 91 9  19 5 49 
+要求出這個金鑰，如果自 1 61 94 579 49 5 149
+己慢慢加實在是太慢 16 54 94 9*8 7 9 16 1 
+所以請你寫一個程式來幫 1 654 947 891 9 
+助他吧！ 1 654 56 9 1 91 98 4 

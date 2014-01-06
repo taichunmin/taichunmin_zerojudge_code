@@ -1,0 +1,1 @@
+d132 < d132-in.txt > d132-out.txt
