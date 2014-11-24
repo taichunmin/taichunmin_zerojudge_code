@@ -1,62 +1,47 @@
 #include<iostream>
 using namespace std;
 
-bool sudoku_check(int *p){
-  bool b1[9];
-  for(int i=0;i<9;i++)b1[i]=0;
-  //for(int i=0;i<9;i++)cout<<p[i]<<" ";cout<<endl;
-  for(int i=0;i<9;i++)b1[p[i]-1]=1;
-  for(int i=0;i<9;i++){
-    if(b1[i]==0)return 0;
-  }
-  return 1;
+#define FLAG_SUCCESS 1022
+int sudoku[9][9];
+
+bool check_sudoku()
+{
+    unsigned int flag;
+    for(int i=0;i<3;i++)
+        for(int j=0;j<3;j++) {
+            flag = 0; // reset flag
+            for(int k=0;k<3;k++)
+                for(int m=0;m<3;m++)
+                    flag |= 1<<sudoku[k][m];
+            if(flag != FLAG_SUCCESS)
+                return false;
+        }
+    for(int i=0;i<9;i++) {
+        flag = 0;
+        for(int j=0;j<9;j++)
+            flag |= 1<<sudoku[i][j];
+        if(flag != FLAG_SUCCESS)
+            return false;
+        flag = 0;
+        for(int j=0;j<9;j++)
+            flag |= 1<<sudoku[j][i];
+        if(flag != FLAG_SUCCESS)
+            return false;
+    }
+    return true;
 }
 
-int main(){
-  int s[9][9];
-  while(cin>>s[0][0]){
-    int c[9],count=0;
-    bool t1=true;
-    for(int i=1;i<9;i++)cin>>s[0][i];
-    for(int i=1;i<9;i++){
-      for(int j=0;j<9;j++)cin>>s[i][j];
+int main()
+{
+    while(cin>>sudoku[0][0]) {
+        for(int i=0;i<9;i++)
+            for(int j=0;j<9;j++)
+            {
+                if(i+j==0) continue;
+                cin>>sudoku[i][j];
+            }
+        if(check_sudoku())
+            cout<<"yes"<<endl;
+        else cout<<"no"<<endl;
     }
-    for(int i=0;i<9 && t1==1;i++){
-      for(int j=0;j<9 && t1==1;j++){
-        c[j]=s[i][j];
-      }
-      t1=sudoku_check(c);
-      //cout<<++count<<" check = "<<t1<<endl;
-    }
-    for(int i=0;i<9 && t1==1;i++){
-      for(int j=0;j<9 && t1==1;j++){
-        c[j]=s[j][i];
-      }
-      t1=sudoku_check(c);
-      //cout<<++count<<" check = "<<t1<<endl;
-    }
-    for(int i=0;i<3 && t1==1;i++){
-      for(int j=0;j<3 && t1==1;j++){
-        int count1=0;
-        for(int k=i*3;k<(i+1)*3 && t1==1;k++){
-          for(int l=j*3;l<(j+1)*3 && t1==1;l++){
-            c[count1]=s[k][l];
-            count1++;
-          }
-        }
-        t1=sudoku_check(c);
-        //cout<<++count<<" check = "<<t1<<endl;
-      }
-    }
-    if(t1)cout<<"yes"<<endl;
-    else cout<<"no"<<endl;
-
-    /*for(int i=0;i<9;i++){
-      for(int j=0;j<9;j++){
-        cout<<s[i][j];
-      }
-    cout<<endl;
-    }*/
-  }
-  //system("pause");
 }
