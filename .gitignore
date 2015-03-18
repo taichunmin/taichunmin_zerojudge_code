@@ -11,3 +11,6 @@
 *.lai
 *.la
 *.a
+
+# Zerojudge not need exe files
+.exe
