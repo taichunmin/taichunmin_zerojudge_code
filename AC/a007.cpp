@@ -11,8 +11,8 @@ void produce_prime()
   {
     bool isprime=true;
     int ta=(int)sqrt(i+0.0)+2;
-    for(int j=2;j<p_count && p[j]<ta && p[j]<i;j++)
-      if(i%p[j]==0)
+    for(int k=2;k<p_count && p[k]<ta && p[k]<i;k++)
+      if(i%p[k]==0)
       {
         isprime=false;
         break;
