@@ -37,11 +37,11 @@ bool check_prime(int ia)
 int main()
 {
   produce_prime();
-  //cout<<"¦@ "<<p_count<<endl;
+  //cout<<"å…± "<<p_count<<endl;
   int ia;
   while(cin>>ia)
   {
-    if(!check_prime(ia))cout<<"«D";
-    cout<<"½è¼Æ"<<endl;
+    if(!check_prime(ia))cout<<"éž";
+    cout<<"è³ªæ•¸"<<endl;
   } 
 }
