@@ -7,7 +7,7 @@ int p_count=4;
 
 void produce_prime()
 {
-  for(int i=11,ta=4;i<=70000;ta=6-ta,i+=ta)
+  for(int i=11,j=4;i<=70000;j=6-j,i+=j)
   {
     bool isprime=true;
     int ta=(int)sqrt(i+0.0)+2;
