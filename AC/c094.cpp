@@ -9,7 +9,6 @@ int main()
   for(int ta=1;cin>>ia>>ib>>ic;ta++)
   {
     if(ia==0 && ib==0 && ic==0)break;
-    if(ta-1)cout<<endl;
     id=ie=0;
     ba=true;
     for(int i=0;i<ia;i++)cin>>aa[i];
@@ -28,5 +27,6 @@ int main()
       cout<<"Maximal power consumption was "<<ie<<" amperes."<<endl;
     }
     else cout<<"Fuse was blown."<<endl;
+    cout<<endl;
   }
 }
